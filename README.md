@@ -44,30 +44,19 @@ For different input combinations generate the timing diagram.
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming.
 ```
-module t_ff_ (t, clk, rst, q);
-
+module t_ff(t, clk, rst, q);
   input t, clk, rst;
-  
   output reg q;
 
   always @(posedge clk or posedge rst) 
-  
 begin
-
     if (rst)
-    
       q <= 0; // Reset the flip-flop
-      
     else if (t==0)
-    
       q <= q; 
-      
      else
-     
         q<=~q;
-        
   end
-  
 endmodule
 ```
 ```
@@ -77,10 +66,12 @@ RegisterNumber:24901155
 */
 
 **RTL LOGIC FOR FLIPFLOPS**
-![WhatsApp Image 2024-12-13 at 19 27 42_0ec410e9](https://github.com/user-attachments/assets/ff245a9e-7328-48de-90de-131d311dd011)
+
+![Screenshot 2024-12-29 174138](https://github.com/user-attachments/assets/b3b7fe05-63c6-4652-a28b-1fedebb734fe)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![WhatsApp Image 2024-12-13 at 19 27 42_932e94ee](https://github.com/user-attachments/assets/b4106e59-c128-474b-81a6-7feef975e30d)
+
+![Screenshot 2024-12-29 174147](https://github.com/user-attachments/assets/34ce7c56-0db7-4539-9cca-2e2465307860)
 
 **RESULTS**
 successfully implemented T flipflop using verilog and validating their functionality using their functional tables
